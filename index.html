@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="en-US">
+<![endif]--><!--[if IE 8]>
+<html class="ie ie8" lang="en-US">
+<![endif]--><!--[if !(IE 7) & !(IE 8)]><!--><html lang="en-US">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<title>CPS-IoTBench 2019 | 2nd Workshop on Benchmarking Cyber-Physical Systems and Internet of Things</title>
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="./xmlrpc.php">
+<!--[if lt IE 9]>
+<script src="https://cps-iotbench2019.ethz.ch/wp-content/themes/twentytwelve/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+<meta name="robots" content="max-image-preview:large">
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="dns-prefetch" href="//use.fontawesome.com">
+<link href="https://fonts.gstatic.com/" crossorigin rel="preconnect">
+<link rel="alternate" type="application/rss+xml" title="CPS-IoTBench 2019 &raquo; Feed" href="./feed/index.html">
+<link rel="alternate" type="application/rss+xml" title="CPS-IoTBench 2019 &raquo; Comments Feed" href="./comments/feed/index.html">
+<script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":".\/\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.3.1"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"🏳️‍⚧️","🏳️​⚧️")?!1:!n(e,"🇺🇳","🇺​🇳")&&!n(e,"🏴󠁧󠁢󠁥󠁮󠁧󠁿","🏴​󠁧​󠁢​󠁥​󠁮​󠁧​󠁿");case"emoji":return!n(e,"🫱🏻‍🫲🏿","🫱🏻​🫲🏿")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+</script>
+<style type="text/css">img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}</style>
+	<link rel="stylesheet" id="wp-block-library-css" href="./wp-includes/css/dist/block-library/style.min.css?ver=6.3.1" type="text/css" media="all">
+<style id="classic-theme-styles-inline-css" type="text/css">/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}</style>
+<style id="global-styles-inline-css" type="text/css">body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}</style>
+<link rel="stylesheet" id="fl-builder-layout-81-css" href="./wp-content/uploads/bb-plugin/cache/81-layout.css?ver=83d4ad2297b3bdcb909ffd4ec3f284a0" type="text/css" media="all">
+<link rel="stylesheet" id="twentytwelve-fonts-css" href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700&#038;subset=latin,latin-ext" type="text/css" media="all">
+<link rel="stylesheet" id="twentytwelve-style-css" href="./wp-content/themes/twentytwelve/style.css?ver=6.3.1" type="text/css" media="all">
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='twentytwelve-ie-css' href='https://cps-iotbench2019.ethz.ch/wp-content/themes/twentytwelve/css/ie.css?ver=20121010' type='text/css' media='all' />
+<![endif]-->
+<link rel="stylesheet" id="font-awesome-official-css" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" type="text/css" media="all" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<link rel="stylesheet" id="tablepress-default-css" href="./wp-content/plugins/tablepress/css/default.min.css?ver=1.9.2" type="text/css" media="all">
+<link rel="stylesheet" id="font-awesome-official-v4shim-css" href="https://use.fontawesome.com/releases/v5.8.1/css/v4-shims.css" type="text/css" media="all" integrity="sha384-knhdgIEP1JBPHETtXGyUk1FXV22kd1ZAN8yyExweAKAfztV5+kSBjUff4pHDG38c" crossorigin="anonymous">
+<style id="font-awesome-official-v4shim-inline-css" type="text/css">@font-face {
+    font-family: "FontAwesome";
+    src: url("https://use.fontawesome.com/releases/v5.8.1/webfonts/fa-brands-400.eot"),
+         url("https://use.fontawesome.com/releases/v5.8.1/webfonts/fa-brands-400.eot?#iefix") format("embedded-opentype"),
+         url("https://use.fontawesome.com/releases/v5.8.1/webfonts/fa-brands-400.woff2") format("woff2"),
+         url("https://use.fontawesome.com/releases/v5.8.1/webfonts/fa-brands-400.woff") format("woff"),
+         url("https://use.fontawesome.com/releases/v5.8.1/webfonts/fa-brands-400.ttf") format("truetype"),
+         url("https://use.fontawesome.com/releases/v5.8.1/webfonts/fa-brands-400.svg#fontawesome") format("svg");
+}
+
+@font-face {
+    font-family: "FontAwesome";
+    src: url("https://use.fontawesome.com/releases/v5.8.1/webfonts/fa-solid-900.eot"),
+         url("https://use.fontawesome.com/releases/v5.8.1/webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"),
+         url("https://use.fontawesome.com/releases/v5.8.1/webfonts/fa-solid-900.woff2") format("woff2"),
+         url("https://use.fontawesome.com/releases/v5.8.1/webfonts/fa-solid-900.woff") format("woff"),
+         url("https://use.fontawesome.com/releases/v5.8.1/webfonts/fa-solid-900.ttf") format("truetype"),
+         url("https://use.fontawesome.com/releases/v5.8.1/webfonts/fa-solid-900.svg#fontawesome") format("svg");
+}
+
+@font-face {
+    font-family: "FontAwesome";
+    src: url("https://use.fontawesome.com/releases/v5.8.1/webfonts/fa-regular-400.eot"),
+         url("https://use.fontawesome.com/releases/v5.8.1/webfonts/fa-regular-400.eot?#iefix") format("embedded-opentype"),
+         url("https://use.fontawesome.com/releases/v5.8.1/webfonts/fa-regular-400.woff2") format("woff2"),
+         url("https://use.fontawesome.com/releases/v5.8.1/webfonts/fa-regular-400.woff") format("woff"),
+         url("https://use.fontawesome.com/releases/v5.8.1/webfonts/fa-regular-400.ttf") format("truetype"),
+         url("https://use.fontawesome.com/releases/v5.8.1/webfonts/fa-regular-400.svg#fontawesome") format("svg");
+    unicode-range: U+F004-F005,U+F007,U+F017,U+F022,U+F024,U+F02E,U+F03E,U+F044,U+F057-F059,U+F06E,U+F070,U+F075,U+F07B-F07C,U+F080,U+F086,U+F089,U+F094,U+F09D,U+F0A0,U+F0A4-F0A7,U+F0C5,U+F0C7-F0C8,U+F0E0,U+F0EB,U+F0F3,U+F0F8,U+F0FE,U+F111,U+F118-F11A,U+F11C,U+F133,U+F144,U+F146,U+F14A,U+F14D-F14E,U+F150-F152,U+F15B-F15C,U+F164-F165,U+F185-F186,U+F191-F192,U+F1AD,U+F1C1-F1C9,U+F1CD,U+F1D8,U+F1E3,U+F1EA,U+F1F6,U+F1F9,U+F20A,U+F247-F249,U+F24D,U+F254-F25B,U+F25D,U+F267,U+F271-F274,U+F279,U+F28B,U+F28D,U+F2B5-F2B6,U+F2B9,U+F2BB,U+F2BD,U+F2C1-F2C2,U+F2D0,U+F2D2,U+F2DC,U+F2ED,U+F328,U+F358-F35B,U+F3A5,U+F3D1,U+F410,U+F4AD;
+}</style>
+<script type="text/javascript" src="./wp-includes/js/jquery/jquery.min.js?ver=3.7.0" id="jquery-core-js"></script>
+<script type="text/javascript" src="./wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<link rel="https://api.w.org/" href="./wp-json/index.html">
+<link rel="alternate" type="application/json" href="./wp-json/wp/v2/pages/81/index.html">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="./xmlrpc.php?rsd">
+<meta name="generator" content="WordPress 6.3.1">
+<link rel="canonical" href="./index.html">
+<link rel="shortlink" href="./index.html">
+<link rel="alternate" type="application/json+oembed" href="./wp-json/oembed/1.0/embed/index.html?url=https%3A%2F%2F%2F">
+<link rel="alternate" type="text/xml+oembed" href="./wp-json/oembed/1.0/embed/index.html?url=https%3A%2F%2F%2F#038;format=xml">
+<link rel="icon" href="./wp-content/uploads/2018/11/cropped-CPS-IoTBench_logo-32x32.png" sizes="32x32">
+<link rel="icon" href="./wp-content/uploads/2018/11/cropped-CPS-IoTBench_logo-192x192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="./wp-content/uploads/2018/11/cropped-CPS-IoTBench_logo-180x180.png">
+<meta name="msapplication-TileImage" content="./wp-content/uploads/2018/11/cropped-CPS-IoTBench_logo-270x270.png">
+		<style type="text/css" id="wp-custom-css">a{
+	color:#FF632E;
+	text-decoration:none;
+}
+
+.widget-area .widget a:visited, .entry-content a:visited, .comment-content a:visited {
+	color:#FF632E;}
+
+.widget img{
+	box-shadow:none;
+}
+
+.tablepress .column-1,
+.tablepress .column-2
+{
+	width: 50px;
+}
+
+
+.tablepress .column-3
+{
+	width: 250px;
+}</style>
+		</head>
+
+<body class="home page-template-default page page-id-81 fl-builder custom-font-enabled single-author">
+<div id="page" class="hfeed site">
+	<header id="masthead" class="site-header" role="banner">
+		<hgroup>
+			<h1 class="site-title"><a href="./index.html" title="CPS-IoTBench 2019" rel="home">CPS-IoTBench 2019</a></h1>
+			<h2 class="site-description">2nd Workshop on Benchmarking Cyber-Physical Systems and Internet of Things</h2>
+		</hgroup>
+
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<button class="menu-toggle">Menu</button>
+			<a class="assistive-text" href="#content" title="Skip to content">Skip to content</a>
+			<div class="menu-main-container"><ul id="menu-main" class="nav-menu">
+<li id="menu-item-86" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-81 current_page_item menu-item-86"><a href="./index.html" aria-current="page">Abstracts</a></li>
+<li id="menu-item-159" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-159"><a href="./detailed-program/index.html">Program</a></li>
+<li id="menu-item-32" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-32"><a href="./call-for-papers/index.html">Call for Papers</a></li>
+<li id="menu-item-33" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33"><a href="./submission-instructions/index.html">Submission instructions</a></li>
+<li id="menu-item-34" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-34"><a href="./organizers/index.html">Organizers</a></li>
+<li id="menu-item-191" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-191"><a target="_blank" rel="noopener" href="./wp-content/uploads/2019/05/CPS-IoTBench-2019.pdf">Summary</a></li>
+</ul></div>		</nav><!-- #site-navigation -->
+
+				<a href="./index.html"><img src="./wp-content/uploads/2018/11/cropped-montrealcut-1.jpg" class="header-image" width="1170" height="305" alt="CPS-IoTBench 2019"></a>
+			</header><!-- #masthead -->
+
+	<div id="main" class="wrapper">
+
+	<div id="primary" class="site-content">
+		<div id="content" role="main">
+
+							
+	<article id="post-81" class="post-81 page type-page status-publish hentry">
+		<header class="entry-header">
+												<h1 class="entry-title">Abstracts</h1>
+		</header>
+
+		<div class="entry-content">
+			<div class="fl-builder-content fl-builder-content-81 fl-builder-content-primary" data-post-id="81">
+<div class="fl-row fl-row-fixed-width fl-row-bg-none fl-node-5c6ac178d2274" data-node="5c6ac178d2274">
+	<div class="fl-row-content-wrap">
+				<div class="fl-row-content fl-row-fixed-width fl-node-content">
+		
+<div class="fl-col-group fl-node-5c6ac178d4fb4" data-node="5c6ac178d4fb4">
+			<div class="fl-col fl-node-5c6ac178d500f fl-col-has-cols" data-node="5c6ac178d500f">
+	<div class="fl-col-content fl-node-content">
+	<div class="fl-module fl-module-rich-text fl-node-5c6ac178d21ea" data-node="5c6ac178d21ea">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<p>CPS-IoTBench will feature a mix of <a href="#talks">invited talks</a> and <a href="#papers">paper presentations</a> to inspire stimulating discussions.</p>
+<p>See the <a href="./detailed-program/index.html">program page</a> for the schedule details.</p>
+</div>
+	</div>
+</div>
+<div id="talks" class="fl-module fl-module-rich-text fl-node-5c6ac1cbb9ee0" data-node="5c6ac1cbb9ee0">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<h3>Invited Talks</h3>
+</div>
+	</div>
+</div>
+
+<div class="fl-col-group fl-node-5c6ac27761d31 fl-col-group-nested" data-node="5c6ac27761d31">
+			<div class="fl-col fl-node-5c6ac27761e02 fl-col-small" data-node="5c6ac27761e02">
+	<div class="fl-col-content fl-node-content">
+	<div class="fl-module fl-module-photo fl-node-5c6ac4430c1a1" data-node="5c6ac4430c1a1">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-photo fl-photo-align-center" itemscope itemtype="https://schema.org/ImageObject">
+	<div class="fl-photo-content fl-photo-img-png">
+				<img decoding="async" class="fl-photo-img" src="http://www.asecolab.org/wp-content/uploads/2012/10/Screen-Shot-2012-10-24-at-19.54.03.png" alt="" itemprop="image">
+					</div>
+	</div>
+	</div>
+</div>
+	</div>
+</div>
+			<div class="fl-col fl-node-5c6ac27761e06" data-node="5c6ac27761e06">
+	<div class="fl-col-content fl-node-content">
+	<div id="keynote" class="fl-module fl-module-rich-text fl-node-5c6ac29d0d3e1" data-node="5c6ac29d0d3e1">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<h3>Keynote</h3>
+<p><span style="font-size: 14px;"><em>Dare to Share: Risks and Rewards of Artifact Sharing in Computer Science</em></span></p>
+<p><span style="font-size: 14px;"><span id="0.6259374870814618" class="highlight">Christian</span> <span id="0.1892758758164177" class="highlight">Collberg</span>, Professor of Computer Science, University of Arizona</span></p>
+<p><span style="font-size: 14px;"><i class="fas fa-desktop">&nbsp;</i>    Presentation (coming soon)</span></p>
+</div>
+	</div>
+</div>
+	</div>
+</div>
+	</div>
+<div class="fl-module fl-module-rich-text fl-node-5c6ac2e663376" data-node="5c6ac2e663376">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<h4>Abstract</h4>
+<div>We report on our experiences with artifact---mostly code---sharing in computer science research: we recount some personal anecdotes, report on outcomes from a deception study, and show initial data from a longitudinal study of sharing rates from our artifact indexing site <a id="LPlnk582574" class="OWAAutoLink" href="https://urldefense.proofpoint.com/v2/url?u=http-3A__FindResearch.org&amp;d=DwQFaQ&amp;c=euGZstcaTDllvimEN8b7jXrwqOf-v5A_CdpgnVfiiMM&amp;r=X0o9_yNByfc59X9qExpc_JPFHKoVKciBlQ9WLcR36vQ&amp;m=ba8dz_0u-PufuzAJsY1c6_G3u7fvASvuqTZde_xYK5M&amp;s=VCPpkQAvzpLGUpregabtHgMwnbLs_nlsVKh0lMbvgJU&amp;e=" target="_blank" rel="noopener noreferrer">FindResearch.org</a>. We then discuss the steps that we need to take--as academic departments, publishers, funding agencies, and as individual educators and researchers--to improve the sharing of artifacts in Computer Science.</div>
+<h4>Short Bio</h4>
+<div>I'm a Professor in the Department of Computer Science at the University of Arizona. Prior to arriving in Tucson I worked at the University of Auckland, New Zealand, and before that I got my Ph.D. from Lund University, Sweden. I have also held a visiting position at the Chinese Academy of Sciences in Beijing, China, and taught courses at universities in Russia and Belarus.</div>
+<div></div>
+<div>My main research interest is computer security, in particular the so-called Man-At-The-End Attack which occurs in settings where an adversary has physical access to a device and compromises it by tampering with its hardware or software. With Jasvir Nagra, I am the author of Surreptitious Software: Obfuscation, Watermarking, and Tamperproofing for Software Protection, published in Addison-Wesley's computer security Series. It has also been translated into Portuguese and Chinese.</div>
+</div>
+	</div>
+</div>
+	</div>
+</div>
+	</div>
+		</div>
+	</div>
+</div>
+<div class="fl-row fl-row-fixed-width fl-row-bg-none fl-node-5c8270da1ea50" data-node="5c8270da1ea50">
+	<div class="fl-row-content-wrap">
+				<div class="fl-row-content fl-row-fixed-width fl-node-content">
+		
+<div class="fl-col-group fl-node-5c8270da239ef" data-node="5c8270da239ef">
+			<div class="fl-col fl-node-5c8270da23a54 fl-col-small" data-node="5c8270da23a54">
+	<div class="fl-col-content fl-node-content">
+	<div class="fl-module fl-module-photo fl-node-5c7cea4d4286e" data-node="5c7cea4d4286e">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-photo fl-photo-align-center" itemscope itemtype="https://schema.org/ImageObject">
+	<div class="fl-photo-content fl-photo-img-jpg">
+				<img decoding="async" loading="lazy" class="fl-photo-img wp-image-95 size-full" src="./wp-content/uploads/2019/03/IMG_20190303_171258.jpg" alt="IMG_20190303_171258" itemprop="image" height="2961" width="3216" title="IMG_20190303_171258" srcset="./wp-content/uploads/2019/03/IMG_20190303_171258.jpg 3216w, ./wp-content/uploads/2019/03/IMG_20190303_171258-300x276.jpg 300w, ./wp-content/uploads/2019/03/IMG_20190303_171258-768x707.jpg 768w, ./wp-content/uploads/2019/03/IMG_20190303_171258-1024x943.jpg 1024w, ./wp-content/uploads/2019/03/IMG_20190303_171258-624x575.jpg 624w" sizes="(max-width: 3216px) 100vw, 3216px">
+					</div>
+	</div>
+	</div>
+</div>
+	</div>
+</div>
+			<div class="fl-col fl-node-5c8270ea3ebbb" data-node="5c8270ea3ebbb">
+	<div class="fl-col-content fl-node-content">
+	<div id="talk1" class="fl-module fl-module-rich-text fl-node-5c7cea5474463" data-node="5c7cea5474463">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<h3>Invited Speaker</h3>
+<p><em>Taming Performance Variability</em></p>
+<p>Aleksander Maricq, University of Utah</p>
+<p><a href="./wp-content/uploads/2019/04/Taming-Performance-Variability-CPS-IotBench19.pdf"><span style="font-size: 14px;"><i class="fas fa-desktop">&nbsp;</i>    Presentation</span></a></p>
+</div>
+	</div>
+</div>
+	</div>
+</div>
+	</div>
+
+<div class="fl-col-group fl-node-5c8270fc8bdf4" data-node="5c8270fc8bdf4">
+			<div class="fl-col fl-node-5c8270fc8beb0" data-node="5c8270fc8beb0">
+	<div class="fl-col-content fl-node-content">
+	<div class="fl-module fl-module-rich-text fl-node-5c7cea47f25d3" data-node="5c7cea47f25d3">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<h4>Abstract</h4>
+<div>The performance of compute hardware varies: software run repeatedly on the same server (or a different server with supposedly identical parts) can produce performance results that differ with each execution. This variation has important effects on the reproducibility of systems research and ability to quantitatively compare the performance of different systems. It also has implications for commercial computing, where agreements are often made conditioned on meeting specific performance targets. Over a period of 10 months, we conducted a large-scale study capturing nearly 900,000 data points from 835 servers. We examine this data from two perspectives: that of a service provider wishing to offer a consistent environment, and that of a systems researcher who must understand how variability impacts experimental results. From this examination, we draw a number of lessons about the types and magnitudes of performance variability and the effects on confidence in experiment results. We also create a statistical model that can be used to understand how representative an individual server is of the general population. The full dataset and our analysis tools are publicly available, and we have built a system to interactively explore the data and make recommendations for experiment parameters based on statistical analysis of historical data. Finally, we remark on preliminary developments in our collection of data since the initial 10 month period.</div>
+<h4>Short Bio</h4>
+<div>I'm a Research Associate who has been working with the Flux Research Group at the University of Utah since 2016, after receiving my Masters in Computer Science from UC San Diego. In addition to my work on maintaining the CloudLab and Emulab projects, I have been primarily responsible for the large-scale collection of various performance metrics from the servers in the aforementioned projects. My research involves analyzing the collected data with my involved colleagues to characterize variability of workloads on compute hardware, find new analysis and statistical methods to use for our data, and improve/expand the collection process.</div>
+</div>
+	</div>
+</div>
+	</div>
+</div>
+	</div>
+		</div>
+	</div>
+</div>
+<div class="fl-row fl-row-fixed-width fl-row-bg-none fl-node-5c875b9bb961e" data-node="5c875b9bb961e">
+	<div class="fl-row-content-wrap">
+				<div class="fl-row-content fl-row-fixed-width fl-node-content">
+		
+<div class="fl-col-group fl-node-5c875b9bb9794" data-node="5c875b9bb9794">
+			<div class="fl-col fl-node-5c875b9bb9796 fl-col-small" data-node="5c875b9bb9796">
+	<div class="fl-col-content fl-node-content">
+	<div class="fl-module fl-module-photo fl-node-5c875b9bb9797" data-node="5c875b9bb9797">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-photo fl-photo-align-center" itemscope itemtype="https://schema.org/ImageObject">
+	<div class="fl-photo-content fl-photo-img-jpg">
+				<img decoding="async" loading="lazy" class="fl-photo-img wp-image-100 size-full" src="./wp-content/uploads/2019/03/BERKELEY_599_alt-e1552374850792.jpg" alt="BERKELEY_599_alt" itemprop="image" height="2403" width="2400" title="BERKELEY_599_alt" srcset="./wp-content/uploads/2019/03/BERKELEY_599_alt-e1552374850792.jpg 2400w, ./wp-content/uploads/2019/03/BERKELEY_599_alt-e1552374850792-150x150.jpg 150w, ./wp-content/uploads/2019/03/BERKELEY_599_alt-e1552374850792-300x300.jpg 300w, ./wp-content/uploads/2019/03/BERKELEY_599_alt-e1552374850792-768x769.jpg 768w, ./wp-content/uploads/2019/03/BERKELEY_599_alt-e1552374850792-1024x1024.jpg 1024w, ./wp-content/uploads/2019/03/BERKELEY_599_alt-e1552374850792-624x625.jpg 624w" sizes="(max-width: 2400px) 100vw, 2400px">
+					</div>
+	</div>
+	</div>
+</div>
+	</div>
+</div>
+			<div class="fl-col fl-node-5c875b9bb9798" data-node="5c875b9bb9798">
+	<div class="fl-col-content fl-node-content">
+	<div id="talk2" class="fl-module fl-module-rich-text fl-node-5c875b9bb9799" data-node="5c875b9bb9799">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<h3>Invited Speaker</h3>
+<p><em>Planes, Trains, Apples, and Oranges - Reproducible Results and Fair Comparisons in Localization Research</em></p>
+<p>Pat Pannuto, University of California, Berkeley</p>
+<p><a href="./wp-content/uploads/2019/04/pannuto19cpsbench.pptx"><span style="font-size: 14px;"><i class="fas fa-desktop">&nbsp;</i>    Presentation</span></a></p>
+</div>
+	</div>
+</div>
+	</div>
+</div>
+	</div>
+
+<div class="fl-col-group fl-node-5c875b9bb979a" data-node="5c875b9bb979a">
+			<div class="fl-col fl-node-5c875b9bb979b" data-node="5c875b9bb979b">
+	<div class="fl-col-content fl-node-content">
+	<div class="fl-module fl-module-rich-text fl-node-5c875b9bb979c" data-node="5c875b9bb979c">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<h4>Abstract</h4>
+<div>Localization remains a continually captivating research problem as so much of human interaction and reasoning relies on location-based contexts. However, decades of work have revealed that there is no one-size-fits-all solution to the bevy of applications that require location information. If every application sets its own requirements, how then do we measure progress in localization technology when each technology sets its own benchmarks? How can we tease apart improvements to underlying physical layer estimates from enhancements to algorithms that process these data points and measure these contributions against the development of systems that exploit fusion to realize better gains than either physical or algorithmic advancements alone? More questions than answers, this talk aims to lay out the state of the field as it is today and to invite discussion on what defines fair comparisons and how to enhance the creation of reproducible artifacts, experimental configurations, and location traces and datasets.</div>
+<h4>Short Bio</h4>
+<div>Pat Pannuto is currently completing his PhD in the Department of Electrical Engineering and Computer Sciences at the University of California, Berkeley. He received his MSE in Computer Science and BSE in Computer Engineering from the University of Michigan. Pat's research is in the broad area of networked embedded systems, with contributions to computer architecture, wireless communications, mobile computing, operating systems, and development engineering. Pat's work has been recognized as a Top Pick in Computer Architecture and selected as a Best Paper Finalist at IPSN, and has been awarded NSF, NDSEG, and Qualcomm Innovation fellowships. Pat has also received teaching awards from the Computer Science Department, the College of Engineering, and the Rackham Graduate School at the University of Michigan.<b><br>
+</b>
+</div>
+</div>
+	</div>
+</div>
+	</div>
+</div>
+	</div>
+		</div>
+	</div>
+</div>
+<div class="fl-row fl-row-fixed-width fl-row-bg-none fl-node-5c8a1d8ce8431" data-node="5c8a1d8ce8431">
+	<div class="fl-row-content-wrap">
+				<div class="fl-row-content fl-row-fixed-width fl-node-content">
+		
+<div class="fl-col-group fl-node-5c8a1d8ce85d5" data-node="5c8a1d8ce85d5">
+			<div class="fl-col fl-node-5c8a1d8ce85d7 fl-col-small" data-node="5c8a1d8ce85d7">
+	<div class="fl-col-content fl-node-content">
+	<div class="fl-module fl-module-photo fl-node-5c8a1d8ce85d8" data-node="5c8a1d8ce85d8">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-photo fl-photo-align-center" itemscope itemtype="https://schema.org/ImageObject">
+	<div class="fl-photo-content fl-photo-img-png">
+				<img decoding="async" loading="lazy" class="fl-photo-img wp-image-105 size-full" src="./wp-content/uploads/2019/03/hskim.png" alt="hskim" itemprop="image" height="523" width="395" title="hskim" srcset="./wp-content/uploads/2019/03/hskim.png 395w, ./wp-content/uploads/2019/03/hskim-227x300.png 227w" sizes="(max-width: 395px) 100vw, 395px">
+					</div>
+	</div>
+	</div>
+</div>
+	</div>
+</div>
+			<div class="fl-col fl-node-5c8a1d8ce85d9" data-node="5c8a1d8ce85d9">
+	<div class="fl-col-content fl-node-content">
+	<div id="talk3" class="fl-module fl-module-rich-text fl-node-5c8a1d8ce85da" data-node="5c8a1d8ce85da">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<h3>Invited Speaker</h3>
+<p><em>Cause &amp; Effect Analysis for Low-Power Wireless Network</em></p>
+<div>
+<p>Hyung-Sin Kim, University of California, Berkeley</p>
+<p><span style="font-size: 14px;"><i class="fas fa-desktop">&nbsp;</i>    Presentation (coming soon)</span></p>
+</div>
+<div></div>
+</div>
+	</div>
+</div>
+	</div>
+</div>
+	</div>
+
+<div class="fl-col-group fl-node-5c8a1d8ce85db" data-node="5c8a1d8ce85db">
+			<div class="fl-col fl-node-5c8a1d8ce85dc" data-node="5c8a1d8ce85dc">
+	<div class="fl-col-content fl-node-content">
+	<div class="fl-module fl-module-rich-text fl-node-5c8a1d8ce85dd" data-node="5c8a1d8ce85dd">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<h4>Abstract</h4>
+<div>In this talk, I will share my research experience on low-power wireless network, specifically about various factors affecting network performance: protocol parameter, routing topology, channel fading, interference, and hardware. After running a network protocol implemented on an embedded platform, we get some numerical results “somehow,” which should be analyzed carefully. I will present several cases of analyzing why a certain result is observed. Some of them became a research problem but some of them ended up with engineering efforts. Overall, sharing these experiences shows why the “IoTBench initiative” is needed.</div>
+<h4>Short Bio</h4>
+<div>
+<div>
+<span id="0.5089284934229668" class="highlight"> Hyung-Sin</span> <span id="0.2309965713914195" class="highlight">Kim</span> is a postdoctoral scholar of EECS at the University of California at Berkeley and working at Building Energy Transportation Systems (BETS) group led by Prof. David E. Culler. He received his B.S. degree in Electrical Engineering from Seoul National University (SNU) in 2009. He received his M.S. degree in 2011 and his Ph.D. degree in 2016, both in Electrical Engineering and Computer Science (EECS) from SNU, both with outstanding thesis awards. From March 2016 to August 2016, he was a postdoctoral  researcher at Network Laboratory (NETLAB) at SNU led by Prof. Saewoong Bahk.  He received the Qualcomm Korea Fellowship in 2011, and the National Research Foundation (NRF) Global Ph.D. Fellowship and Postdoctoral Fellowship in 2011 and 2016, respectively. His research mainly focuses on networked embedded systems for the Internet of Things while broadly spanning neighboring areas such as cellular communication, mobile network, augmented reality, security, and fog/edge computing, resulting in 45+ academic publications and several awards.</div>
+</div>
+</div>
+	</div>
+</div>
+	</div>
+</div>
+	</div>
+		</div>
+	</div>
+</div>
+<div class="fl-row fl-row-fixed-width fl-row-bg-none fl-node-5c82711b61ac8" data-node="5c82711b61ac8">
+	<div class="fl-row-content-wrap">
+				<div class="fl-row-content fl-row-fixed-width fl-node-content">
+		
+<div class="fl-col-group fl-node-5c82711b61c23" data-node="5c82711b61c23">
+			<div class="fl-col fl-node-5c82711b61c25 fl-col-small" data-node="5c82711b61c25">
+	<div class="fl-col-content fl-node-content">
+	<div class="fl-module fl-module-photo fl-node-5c82711b61c26" data-node="5c82711b61c26">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-photo fl-photo-align-center" itemscope itemtype="https://schema.org/ImageObject">
+	<div class="fl-photo-content fl-photo-img-jpg">
+				<img decoding="async" loading="lazy" class="fl-photo-img wp-image-53 size-full" src="./wp-content/uploads/2018/11/portrait_2018.jpg" alt="Romain Jacob portrait picture" itemprop="image" height="867" width="675" title="Romain Jacob" srcset="./wp-content/uploads/2018/11/portrait_2018.jpg 675w, ./wp-content/uploads/2018/11/portrait_2018-234x300.jpg 234w, ./wp-content/uploads/2018/11/portrait_2018-624x801.jpg 624w" sizes="(max-width: 675px) 100vw, 675px">
+					</div>
+	</div>
+	</div>
+</div>
+<div class="fl-module fl-module-photo fl-node-5c8271e86aa94" data-node="5c8271e86aa94">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-photo fl-photo-align-center" itemscope itemtype="https://schema.org/ImageObject">
+	<div class="fl-photo-content fl-photo-img-jpg">
+				<img decoding="async" loading="lazy" class="fl-photo-img wp-image-98 size-full" src="./wp-content/uploads/2019/03/3rd_place-e1552294619521.jpg" alt="3rd_place" itemprop="image" height="102" width="102" title="3rd_place">
+					</div>
+	</div>
+	</div>
+</div>
+	</div>
+</div>
+			<div class="fl-col fl-node-5c82711b61c27" data-node="5c82711b61c27">
+	<div class="fl-col-content fl-node-content">
+	<div id="talk4" class="fl-module fl-module-rich-text fl-node-5c82711b61c28" data-node="5c82711b61c28">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<h3>Invited Speaker</h3>
+<p><em><span style="font-weight: 400;">IoTBench - Past, present, and future of a community-driven benchmarking initiative</span></em></p>
+<p><span style="font-size: 14px;">Romain Jacob, ETH Zurich</span><br>
+<span style="font-size: 14px;">Markus Schuss, Graz University of Technology</span></p>
+<p><span style="font-size: 14px;"><a href="./wp-content/uploads/2019/04/2019-04-15_IoTBench_PastPresentFuture.pdf"><i class="fas fa-desktop">&nbsp;</i>    Presentation</a></span></p>
+<div>
+<h4>Abstract</h4>
+<div>
+<p><span style="font-weight: 400;">Since the first discussions in 2016, the IoTBench initiative has come a long way. The community has sketched a roadmap to improve the reproducibility and comparability of low-power wireless networking experiments. We have now started the journey and the gaps are being filled. </span></p>
+</div>
+</div>
+</div>
+	</div>
+</div>
+	</div>
+</div>
+	</div>
+
+<div class="fl-col-group fl-node-5c82711b61c2c" data-node="5c82711b61c2c">
+			<div class="fl-col fl-node-5c82711b61c2d" data-node="5c82711b61c2d">
+	<div class="fl-col-content fl-node-content">
+	<div class="fl-module fl-module-rich-text fl-node-5c82711b61c2e" data-node="5c82711b61c2e">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<div>
+<p><span style="font-weight: 400;">In this talk, we will present the vision, the end goal, and our proposed strategy by the IoTBench initiative to get there. We will review what has been done, what is ongoing, and most importantly, what is ahead. The talk will be directly followed by an open discussion with all workshop participants. Because ultimately, everyone needs to be involved if we want our community's practices to change and improve.</span></p>
+</div>
+<h4>Short Bio - Romain Jacob</h4>
+<div><span style="font-weight: 400;">Romain Jacob is a final year doctoral student from ETH Zürich, Switzerland. His doctorate focuses on low-power wireless communication protocols using on Synchronous Transmissions. He has been heavily involved on the IoTBench Initiative, which aims to improve the standards for evaluation, comparison, and ultimately benchmarking in the low-power networking community. Besides, he is an active supporter of the migration towards Open Science models, and the development of novel means of evaluating research outputs, as proposed in DORA. Before he joined ETH in 2015, Romain got his Master degree from the École Normale Supérieure Paris-Saclay (France) and spent a year as Visiting Scholar in UC Berkeley (USA).</span></div>
+<div>
+<h4>Short Bio - Markus Schuss</h4>
+<p><span lang="EN-US">Markus Schuß is a third-year PhD student at the Institute for Technical Informatics of TU Graz, Austria. He received his M.Sc degree in Information and Computer Engineering from TU Graz in 2016. His research interests encompass the development of testbeds and benchmarking infrastructures, as well as the  evaluation of the performance of low-power wireless communication protocols used in the Internet of Things and in industrial automation. Among others, he has developed (i) D-Cube, an open-source tool to create large-scale testbeds used to evaluate the dependability of state-of-the-art IoT protocols, and (ii) JamLab-NG, an open-source tool to generate repeatable Wi-Fi interference. Both tools have been used to run the EWSN Dependability Competition series (quantitatively comparing the performance of state-of-the-art IoT protocols in harsh RF environments), for which he served as a general co-chair.</span></p>
+</div>
+</div>
+	</div>
+</div>
+	</div>
+</div>
+	</div>
+		</div>
+	</div>
+</div>
+<div class="fl-row fl-row-fixed-width fl-row-bg-none fl-node-5c8270bdaf4b5" data-node="5c8270bdaf4b5">
+	<div class="fl-row-content-wrap">
+				<div class="fl-row-content fl-row-fixed-width fl-node-content">
+		
+<div class="fl-col-group fl-node-5c8270bdb4e56" data-node="5c8270bdb4e56">
+			<div class="fl-col fl-node-5c8270bdb4ebd" data-node="5c8270bdb4ebd">
+	<div class="fl-col-content fl-node-content">
+	<div id="papers" class="fl-module fl-module-rich-text fl-node-5c6ac1eb1b57c" data-node="5c6ac1eb1b57c">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<h3>Accepted Papers</h3>
+<p><i>GenEE: A Benchmark Generator for Static Analysis Tools of Energy-Constrained Cyber-Physical Systems<br>
+</i>Christian Eichler, Peter Wägemann, Wolfgang Schröder-Preikschat<br>
+<span style="color: #333333;">Friedrich-Alexander-Universität Erlangen-Nürnberg, Germany<br>
+</span><span style="font-size: 14px;"><a href="https://dl.acm.org/citation.cfm?id=3313170"><i class="fas fa-file">&nbsp;</i>  Paper</a>    <a href="./wp-content/uploads/2019/04/P5.pdf"><i class="fas fa-desktop">&nbsp;</i>  Presentation</a>   </span></p>
+<p><i>The Impact of Decreasing Transmit Power Levels on FlockLab To Achieve a Sparse Network<br>
+</i>Matthew Bradbury [1], Arshad Jhumka [2], Carsten Maple [1]<br>
+[1]  WMG University of Warwick, UK<br>
+[2] Department of Computer Science University of Warwick, UK<span style="color: #333333;"><br>
+</span><span style="font-size: 14px;"><a href="https://dl.acm.org/citation.cfm?id=3313171"><i class="fas fa-file">&nbsp;</i>  Paper</a>    <a href="./wp-content/uploads/2019/04/P3.pdf"><i class="fas fa-desktop">&nbsp;</i>  Presentation</a>   </span></p>
+<p><i>HATBED: A Distributed Hardware Assisted Testbed for Non-invasive Profiling of IoT Devices<br>
+</i>Li Yi , Junyan Ma, Te Zhang<br>
+School of Information Engineering, Chang’an University Xi’an, China<br>
+<span style="font-size: 14px;"><a href="https://dl.acm.org/citation.cfm?id=3313172"><i class="fas fa-file">&nbsp;</i>  Paper</a>    <a href="./wp-content/uploads/2019/04/P4_new.pdf"><i class="fas fa-desktop">&nbsp;</i>  Presentation</a>   </span></p>
+<p><i>Towards a Methodology for Experimental Evaluation in Low-Power Wireless Networking<br>
+</i>Romain Jacob [1], Carlo Alberto Boano [2], Usman Raza [3], Marco Zimmerling [4], Lothar Thiele [1]<br>
+[1] ETH Zurich, Switzerland<br>
+[2] Graz University of Technology, Austria<br>
+[3] Toshiba Research Europe Limited, UK<br>
+[4] TU Dresden, Germany<br>
+<span style="font-size: 14px;"><a href="https://www.research-collection.ethz.ch/bitstream/handle/20.500.11850/325096/paper.pdf?sequence=1&amp;isAllowed=y"><i class="fas fa-file">&nbsp;</i>  Paper</a>    <a href="./wp-content/uploads/2019/05/2019-04-15_Methodology.pdf"><i class="fas fa-desktop">&nbsp;</i>  Presentation</a>    <a href="https://youtu.be/XEwCqmU9Zzo"><i class="fas fa-video">&nbsp;</i>  Video</a></span></p>
+<p><i>Lessons Learned and Challenges on Benchmarking Publish-Subscribe IoT Platforms<br>
+</i>Ana Aguiar [1], Ricardo Morla [2]<br>
+[1] University of Porto, Instituto de Telecomunicações Porto, Portugal<br>
+[2] University of Porto, INESC TEC Porto, Portugal<br>
+<span style="font-size: 14px;"><a href="https://dl.acm.org/citation.cfm?id=3313174"><i class="fas fa-file">&nbsp;</i>  Paper</a>    <a href="./wp-content/uploads/2019/04/P1.pdf"><i class="fas fa-desktop">&nbsp;</i>  Presentation</a>   </span></p>
+</div>
+	</div>
+</div>
+	</div>
+</div>
+	</div>
+		</div>
+	</div>
+</div>
+</div>					</div>
+<!-- .entry-content -->
+		<footer class="entry-meta">
+					</footer><!-- .entry-meta -->
+	</article><!-- #post -->
+				
+<div id="comments" class="comments-area">
+
+	
+	
+	
+</div>
+<!-- #comments .comments-area -->
+			
+		</div>
+<!-- #content -->
+	</div>
+<!-- #primary -->
+
+
+			<div id="secondary" class="widget-area" role="complementary">
+			<aside id="text-3" class="widget widget_text">			<div class="textwidget">
+<p>A <a href="http://cpslab.cs.mcgill.ca/cpsiotweek2019/">CPS-IoT Week</a> workshop<br>
+Montreal, Canada<br>
+April 15, 2019</p>
+</div>
+		</aside><aside id="media_image-3" class="widget widget_media_image"><img width="150" height="150" src="./wp-content/uploads/2018/11/CPS-IoTBench_logo-150x150.png" class="image wp-image-56  attachment-thumbnail size-thumbnail" alt="" decoding="async" style="max-width: 100%; height: auto;" loading="lazy" srcset="./wp-content/uploads/2018/11/CPS-IoTBench_logo-150x150.png 150w, ./wp-content/uploads/2018/11/CPS-IoTBench_logo-300x300.png 300w, ./wp-content/uploads/2018/11/CPS-IoTBench_logo-768x768.png 768w, ./wp-content/uploads/2018/11/CPS-IoTBench_logo-1024x1024.png 1024w, ./wp-content/uploads/2018/11/CPS-IoTBench_logo-624x624.png 624w, ./wp-content/uploads/2018/11/CPS-IoTBench_logo.png 1134w" sizes="(max-width: 150px) 100vw, 150px"></aside><aside id="text-4" class="widget widget_text"><h3 class="widget-title">Important dates</h3>			<div class="textwidget">
+<p>Submission deadline<br>
+<strike>January 9, 2019 (11:59:59PM EST)</strike><br>
+<strong>January 15</strong>, 2019 (11:59:59PM EST)<br>
+[ <strong style="color: red;">FIRM!</strong> ]</p>
+<p>Authors notification<br>
+<strong>February 5</strong>, 2019</p>
+<p>Camera-ready submission deadline<br>
+<strong>February 15</strong>, 2019</p>
+<p>Workshop<br>
+<strong>April 15</strong>, 2019</p>
+</div>
+		</aside>		</div>
+<!-- #secondary -->
+		</div>
+<!-- #main .wrapper -->
+	<footer id="colophon" role="contentinfo">
+		<div class="site-info">
+									<a href="https://wordpress.org/" class="imprint" title="Semantic Personal Publishing Platform">
+				Proudly powered by WordPress			</a>
+		</div>
+<!-- .site-info -->
+	</footer><!-- #colophon -->
+</div>
+<!-- #page -->
+
+<script type="text/javascript">if(typeof jQuery == 'undefined' || typeof jQuery.fn.on == 'undefined') {
+	document.write('<script src=".//wp-includes/js/jquery/jquery.js"><\/script>');
+	document.write('<script src=".//wp-includes/js/jquery/jquery-migrate.min.js"><\/script>');
+}</script></script>
+<script type="text/javascript" src="./wp-content/uploads/bb-plugin/cache/81-layout.js?ver=83d4ad2297b3bdcb909ffd4ec3f284a0" id="fl-builder-layout-81-js"></script>
+<script type="text/javascript" src="./wp-content/themes/twentytwelve/js/navigation.js?ver=20140711" id="twentytwelve-navigation-js"></script>
+</body>
+</html>
